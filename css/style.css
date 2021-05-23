@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.image {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpaperheart.com%2Fwp-content%2Fuploads%2F2018%2F08%2Fwindows-10-hd-wallpaper-6.jpg&f=1&nofb=1);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.image h1 {
+  color: #fff;
+  margin: auto;
+}
+.first-container {
+  width: 85%;
+  margin: auto;
+  padding: 2rem;
+}
+h2 {
+  text-align: center;
+  padding: 2rem;
+}
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+.active1 {
+  opacity: 1;
+  transform: scale(1);
+}
+.col1 {
+  text-align: center;
+  line-height: 2rem;
+}
+/* Second container */
+.second-container {
+  width: 95vw;
+  margin: auto;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  opacity: 0;
+  transform: translateX(75rem);
+  transition: 1s;
+}
+.col-2 img {
+  height: 15em;
+}
+.active2 {
+  opacity: 1;
+  transform: translateX(0rem);
+}
